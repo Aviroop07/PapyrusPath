@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 20px;
+            background-color: #f0f0f0; /* Set the background color */
+        }
+        .container {
+            max-width: 400px;
+            background-color: #fff; /* Set the background color */
+            padding: 20px;
+            border-radius: 10px; /* Add some border radius for a rounded look */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+        }
+        .btn-back {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Contact Information</h1>
+        <ul class="list-group mt-4">
+            <li class="list-group-item"><strong>Name:</strong> {{ contact['name'] }}</li>
+            <li class="list-group-item"><strong>Email:</strong> {{ contact['email'] }}</li>
+            <li class="list-group-item"><strong>Phone:</strong> {{ contact['contact'] }}</li>
+        </ul>
+        <div class="mt-4">
+            <a class="btn btn-primary btn-lg btn-block" href="{{ contact['linkedin'] }}" target="_blank">LinkedIn Profile</a>
+            <a class="btn btn-primary btn-lg btn-block" href="/">Back</a>
+        </div>
+    </div>
+</body>
+</html>
